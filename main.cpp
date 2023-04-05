@@ -7,7 +7,10 @@ int main(){
     int *rev = new int[len];
     GetReverse(len,l,rev);
     for(int i=1;i<len;i++)
-        printBinary(rev[i]);
+        {
+            cout<<"origin ("<<i<<")  ";
+            printBinary(rev[i]);
+        }
     cout<<"finish"<<endl;
     delete []rev;
     return 0;
