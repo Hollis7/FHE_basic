@@ -23,6 +23,10 @@ int main(){
     fft(A1, N);
     fft(A2, N);
 
+    for(int i=0;i<N;i++)
+    {
+        cout<<"A1["<<i<<"]: "<<A1[i]<<"A2["<<i<<"]: "<<A2[i]<<endl;
+    }
     for(int i = 0; i < N; i ++) 
         C[i] = A1[i] * A2[i];
 
@@ -30,8 +34,7 @@ int main(){
 
     // 输出
 
-    
-
+    cout<<"-------------------------------"<<endl;
     for(int i = 0; i < N; i ++) 
         cout << C[i] << endl;
 
